@@ -1,0 +1,58 @@
+#friends-display-link {
+  text-align: center;
+  display: block;
+  background-color: #fafafa;
+  padding: 10px 0px;
+  font-size: 15px;
+  margin-bottom: 5px;
+  margin-top: -10px;
+}
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.2);
+}
+.friends-list {
+  margin-bottom: 20px;
+}
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+}
+.friends-screen__channel {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px 0;
+  border-bottom: var(--main-border);
+}
+.friends-screen__channel-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.recommended-friends {
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.splash-screen {
+  background-image: url(https://cdnimg.melon.co.kr/cm2/album/images/105/54/246/10554246_20210325161233_500.jpg?304eb9ed9c07a16ec6d6e000dc0e7d91);
+  background-size: 100vw 100vh;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 1s;
+}
